@@ -1,0 +1,529 @@
+@charset "UTF-8";
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #232526, #414345);
+  color: #eee;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #090909;
+}
+body header .navbar .navbar-brand {
+  color: #eee;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
+}
+body header .navbar .nav-link {
+  color: #eee !important;
+}
+body header .navbar .dropdown-menu {
+  right: 0 !important;
+  left: unset !important;
+  background-color: #1f1b24;
+  border: 0;
+}
+body header .navbar .dropdown-menu .dropdown-item {
+  color: #eee;
+}
+body header .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #090909;
+}
+body header .navbar .dropdown-menu .dropdown-divider {
+  border-top: 1px solid #fff !important;
+}
+body header .navbar .notif-counter {
+  background-color: #cc0000;
+  color: #eee;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+body footer {
+  background-color: #090909;
+  color: #eee;
+}
+body footer a {
+  color: #eee;
+  text-decoration: none;
+}
+body footer a:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+body main {
+  margin-top: 56px;
+}
+body main .search-kit .input-dark {
+  height: 3rem;
+}
+body main .search-kit button {
+  position: relative;
+  top: 3px;
+}
+body main .filter-kit-desktop {
+  background-color: #1f1b24;
+  padding: 1rem;
+  border-radius: 4px;
+}
+body main .filter-kit-desktop .orderby {
+  background-image: linear-gradient(to bottom, #a73737, #7a2828);
+  right: 1rem;
+  top: 1rem;
+  border-radius: 4px;
+}
+body main .filter-kit-desktop .orderby button {
+  color: #eee;
+}
+body main .filter-kit-desktop .orderby .dropdown-menu {
+  background-color: #1f1b24;
+  border: 0;
+}
+body main .filter-kit-desktop .orderby .dropdown-menu .dropdown-item {
+  color: #eee;
+}
+body main .filter-kit-desktop .orderby .dropdown-menu .dropdown-item:hover {
+  background-color: #090909;
+}
+body main .filter-kit-mobile {
+  display: none;
+}
+body main .filter-kit-mobile .dropdown-menu {
+  background-color: #1f1b24;
+  border: 0;
+}
+body main .filter-kit-mobile .dropdown-menu .dropdown-item {
+  color: #eee;
+}
+body main .filter-kit-mobile .dropdown-menu .dropdown-item:hover {
+  background-color: #090909;
+}
+body main .highlighted .card-body {
+  height: 112px;
+  background-image: linear-gradient(to bottom, #41295a, #2F0743) !important;
+}
+body main .highlighted.darkbg {
+  background-color: #090909;
+  padding: 1rem;
+  border-radius: 4px;
+}
+body main .input-dark {
+  background: #090909;
+  color: #eee;
+  border: 0;
+}
+body main .input-dark:focus {
+  background: #121212;
+  color: #eee;
+}
+body main .input-dark .ts-control, body main .input-dark .ts-wrapper.single.input-active .ts-control, body main .input-dark .ts-control input {
+  background: transparent !important;
+  color: #eee !important;
+  border: 0 !important;
+}
+body main .entity-title {
+  color: #eee;
+}
+body main .quicklink {
+  color: #eee;
+  background-color: #a73737;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+body main .owl-item a {
+  text-decoration: none;
+}
+body main .item-card .card-image {
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+body main .item-card .card-status {
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #eee;
+}
+body main .item-card .card-status.sold {
+  background: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  padding: 1rem 0;
+  line-height: 20;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+body main .item-card .card-body {
+  background-image: linear-gradient(to bottom, #a73737, #7a2828);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body main .item-card .card-body .card-title {
+  color: #eee;
+  text-decoration: none;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1rem;
+  line-height: unset;
+}
+body main .item-card .card-body .card-text {
+  color: #eee;
+  text-decoration: none;
+}
+body main .item-card .card-body .card-text.platform {
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  width: fit-content;
+  display: table;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+body main .item-card .card-body .card-text.platform.sony {
+  background-color: #0070cc;
+}
+body main .item-card .card-body .card-text.platform.microsoft {
+  background-color: #107c10;
+}
+body main .item-card .card-body .card-text.platform.nintendo {
+  background-color: #e60012;
+}
+body main .item-card .card-body .card-text.platform.magnavox {
+  background-color: #A36A00;
+}
+body main .item-card .card-body .card-text.platform.atari {
+  background-color: #1f1b24;
+}
+body main .item-card .card-body .card-text.platform.mattel {
+  background-color: #de3284;
+}
+body main .item-card .card-body .card-text.platform.coleco {
+  background-color: #121212;
+}
+body main .item-card .card-body .card-text.platform.sega {
+  background-color: #003982;
+}
+body main .item-card .card-body .card-text.platform.nec {
+  background-color: #04127c;
+}
+body main .item-card .card-body .card-text.platform.snk {
+  background-color: #3fa8f4;
+}
+body main .item-card .card-body .card-text.platform.egyéb {
+  background-color: #333;
+}
+body main .item-card .card-body .card-text.rank {
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+body main .item-card .card-body .card-text.rank.ujonc {
+  background-image: linear-gradient(to bottom right, #E0EAFC, #CFDEF3);
+  color: #333;
+}
+body main .item-card .card-body .card-text.rank.bronz-tag {
+  background-image: linear-gradient(to bottom right, #CD7F32, #B8722D);
+  color: #333;
+}
+body main .item-card .card-body .card-text.rank.ezust-tag {
+  background-image: linear-gradient(to bottom right, #757F9A, #D7DDE8);
+  color: #333;
+}
+body main .item-card .card-body .card-text.rank.arany-tag {
+  background-image: linear-gradient(to bottom right, #ffb347, #ffcc33);
+  color: #333;
+}
+body main .item-card .card-body .card-text.rank.admin {
+  background-image: linear-gradient(to bottom right, #ED213A, #93291E);
+  color: #eee;
+}
+body main .item-card .card-body .card-text .fa-circle {
+  position: relative;
+  top: -3px;
+  font-size: 0.25rem;
+  margin: 0 0.5rem;
+}
+body main .show-image {
+  border-radius: 4px;
+}
+body main .btn-red {
+  background-image: linear-gradient(to bottom, #a73737, #7a2828);
+  color: #eee;
+  transition: none;
+}
+body main .btn-red:hover {
+  background-image: unset;
+  background-color: #a73737;
+  color: #eee;
+}
+body main .profile-picture {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 4px;
+}
+body main .contact-link {
+  color: #a73737;
+}
+body main .msgpartner {
+  background-color: #090909;
+  border-radius: 4px;
+  color: #eee;
+}
+body main .msgpartner .msg-photo {
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+body main .msgpartner h4 {
+  color: #a73737;
+}
+body main .msgpartner .lastMessageDate {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+body main .message-offcanvas {
+  background-image: linear-gradient(to bottom right, #232526, #414345);
+}
+body main .message-offcanvas .message-partner {
+  background-color: #090909;
+}
+body main .message-offcanvas .message-partner .photo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+body main .message-offcanvas .message-partner .name {
+  color: #a73737;
+}
+body main .message-offcanvas .messages-container {
+  padding: 1rem;
+  overflow-y: scroll;
+}
+body main .message-offcanvas .messages-container .message {
+  border-radius: 4px;
+}
+body main .message-offcanvas .messages-container .message .message-subject {
+  background-color: #1f1b24;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
+body main .message-offcanvas .messages-container .message .date {
+  position: absolute;
+  right: 1rem;
+  top: -9px;
+  font-size: 0.75rem;
+  background-color: #1f1b24;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  display: none;
+}
+body main .message-offcanvas .messages-container .message.to {
+  margin-right: 5rem;
+  background-color: #a73737;
+}
+body main .message-offcanvas .messages-container .message.from {
+  margin-left: 5rem;
+  background-color: #7a2828;
+}
+body main .message-offcanvas .messages-container .message:hover .date {
+  display: block !important;
+}
+body main .message-offcanvas .message-reply {
+  margin: auto;
+}
+body main .message-offcanvas .message-reply .btn-send {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #a73737;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+body main .message-offcanvas .message-reply .btn-send span {
+  color: #fff;
+  position: relative;
+  top: 3px;
+}
+body main .alert-success {
+  color: #eee;
+  border-color: #7a2828;
+  background-image: linear-gradient(to bottom, #a73737, #7a2828);
+}
+body main .hoverline-link {
+  color: #eee;
+  font-style: italic;
+}
+body main .hoverline-link:hover {
+  text-decoration: underline;
+}
+body main .like-button {
+  color: #a73737;
+  font-size: 2rem;
+  transition: 0.25s;
+}
+body main .like-button:hover {
+  font-size: 2.5rem;
+}
+body main .liked-button {
+  color: #a73737;
+  font-size: 2rem;
+}
+body .bottom-section {
+  background-image: linear-gradient(to bottom, #a73737, #7a2828);
+}
+body .bottom-section a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+body .bottom-section a svg {
+  fill: #eee;
+}
+body .bottom-section a:hover {
+  position: relative;
+  bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  main .search-kit {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  main .search-kit input, main .search-kit select {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+  main .search-kit button {
+    width: auto !important;
+    margin: auto;
+  }
+  main .filter-kit-desktop {
+    display: none;
+  }
+  main .filter-kit-mobile {
+    display: block !important;
+  }
+  main .filter-kit-mobile .form-group {
+    width: 100%;
+  }
+  main .filter-kit-mobile .btn-red {
+    height: 2.5rem;
+  }
+  main .profile-picture {
+    height: 20rem !important;
+  }
+  main .user-card .item-card .card-image, main .game-card .item-card .card-image, main .series-card .item-card .card-image {
+    height: 10rem !important;
+  }
+  main .user-card .item-card .card-body, main .game-card .item-card .card-body, main .series-card .item-card .card-body {
+    padding: 0.5rem;
+  }
+  main .user-card .item-card .card-body .card-title, main .game-card .item-card .card-body .card-title, main .series-card .item-card .card-body .card-title {
+    margin-bottom: 0;
+  }
+  main .user-card .item-card .card-body .card-text, main .game-card .item-card .card-body .card-text, main .series-card .item-card .card-body .card-text {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  main .user-card .item-card .card-body .card-text .fas, main .game-card .item-card .card-body .card-text .fas, main .series-card .item-card .card-body .card-text .fas {
+    display: none;
+  }
+  main .user-card .item-card .card-body .card-text.rank, main .game-card .item-card .card-body .card-text.rank, main .series-card .item-card .card-body .card-text.rank {
+    width: auto;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  main .user-card .item-card .card-body .card-text.platform, main .game-card .item-card .card-body .card-text.platform, main .series-card .item-card .card-body .card-text.platform {
+    margin-top: 0.5rem;
+  }
+  main .sale-card .item-card .card-image {
+    height: 10rem !important;
+  }
+  main .sale-card .item-card .card-body {
+    padding: 0.5rem;
+  }
+  main .sale-card .item-card .card-body .card-title {
+    margin-bottom: 0;
+  }
+  main .sale-card .item-card .card-body .card-text {
+    margin-bottom: 0;
+  }
+  main .sale-card .item-card .card-body .card-text.platform {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  main .sale-card .item-card .card-status.sold {
+    line-height: 8;
+  }
+  main .wanted-card .item-card .card-image {
+    height: 10rem !important;
+  }
+  main .wanted-card .item-card .card-body {
+    padding: 0.5rem;
+  }
+  main .wanted-card .item-card .card-body .card-title {
+    margin-bottom: 0;
+  }
+  main .wanted-card .item-card .card-body .card-text {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  main .wanted-card .item-card .card-body .card-text .fas {
+    display: none;
+  }
+  main .wanted-card .item-card .card-body .card-text.platform {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  main .wanted-card .item-card .card-status.sold {
+    line-height: 8;
+  }
+  main .user-card .card-body {
+    position: relative;
+  }
+  main .user-card .card-body .rank {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0 4px !important;
+  }
+  main .like-button, main .liked-button {
+    color: #eee !important;
+  }
+  main .like-counter {
+    background-color: #a73737;
+  }
+  footer .col-12 {
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
